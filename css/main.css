@@ -1,0 +1,342 @@
+body {
+    font-family: "Open Sans", Verdana;
+}
+
+/* Top line */
+
+.top-line {
+    font-size: 16px;
+}
+
+.top-line .navbar {
+    border-radius: 0;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.top-line .navbar .navbar-brand {
+    font-family: Comfortaa;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.top-line .navbar-default .navbar-nav>.active>a {
+    background-color: transparent;
+    color: #000000;
+}
+
+.top-line .navbar-default .navbar-nav>li>a {
+    color: #0000ff;
+}
+
+.top-line .navbar-default .navbar-nav>li>a:hover {
+    color: #ff0000;
+}
+
+.top-line .nav-part,
+.top-line .btn-part {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.top-line .nav-part {
+
+}
+
+/* End Top line */
+
+/* Page Title */
+.page-title .title-part {
+    padding-left: 0;
+}
+
+.page-title h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 40px 0;
+}
+/* End Page Title */
+
+/* Forms set */
+.forms-set .form-col .form-group {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.forms-set .form-col {
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+.forms-set .form-col .checkbox-holder {
+    padding-top: 6px;
+}
+
+.forms-set .form-col.input-holder .form-control {
+    width: 88%;
+}
+
+.forms-set .form-col .title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.forms-set .form-col-btn {
+    padding-top: 25px;
+}
+
+.divider {
+    position: relative;
+    height: 34px;
+}
+.divider:before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: #000000;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+/* End Forms set */
+
+/* Reg Text */
+.reg-text {
+    text-align: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    margin: 40px 0;
+    padding: 40px 0;
+}
+.reg-text .title {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 100;
+    font-size: 34px;
+}
+.reg-text .desc {
+    padding: 20px 0 24px 0;
+    font-size: 24px;
+}
+/* End Reg Text*/
+
+/* Footer */
+footer {
+    width: 100%;
+    display: block;
+    background: #000000;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ff0000;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+}
+
+footer .contacts {
+    padding: 40px 0 40px 20px;
+}
+
+footer .socials {
+    padding: 40px 20px 40px 0;
+    text-align: right;
+}
+
+footer .socials li {
+    display: inline;
+    padding-left: 10px;
+}
+footer .socials li a {
+    text-decoration: none;
+}
+/* End Footer */
+
+/* Parts, Hot classes */
+
+.form-control {
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.0);
+    box-shadow: inset 0 0 0 rgba(0,0,0,.0);
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(255, 191, 0, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 191, 0, 0.6);
+    outline: 0 none;
+}
+input[type=checkbox] {
+    position: relative;
+    visibility: hidden;
+    top: -2px;
+}
+
+input[type=checkbox]:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    display: block;
+    visibility: visible;
+    cursor: pointer;
+    border-radius: 4px;
+}
+input[type=checkbox]:checked:before {
+    border-color: rgba(255, 191, 0, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 191, 0, 0.6);
+    outline: 0 none;
+}
+label input[type=checkbox]:checked {
+    color: #ffbf00;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    left: 8px;
+    top: -4px;
+    width: 6px;
+    border-bottom: 2px solid #000000;
+    height: 15px;
+    border-right: 2px solid #000000;
+    transform: rotate(42deg);
+    -o-transform: rotate(42deg);
+    -ms-transform: rotate(42deg);
+    -webkit-transform: rotate(42deg);
+    visibility: visible;
+}
+
+.btn {
+    border-radius: 0;
+    outline: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+}
+
+.btn.trt {
+    background-color: transparent;
+    border: 1px solid #c0c0c0;
+    color: #0000ff;
+}
+
+.btn.red {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.btn.orange {
+    background-color: #ffbf00;
+    color: #ffffff;
+}
+
+.btn-big {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.navbar-toggle {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 17px 14px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000000;
+    width: 30px;
+    height: 1px;
+}
+.navbar-default .navbar-collapse {
+    border-color: #000000;
+    border-width: 2px;
+}
+
+.prl {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* End Parts, Hot classes */
+
+/* @Media */
+@media (max-width:992px) {
+    .top-line .navbar-default .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .top-line .navbar-default .navbar-nav {
+        padding-left: 23px;
+    }
+    .top-line .navbar-default .navbar-nav > li a {
+        font-size: 14px;
+        padding: 15px 5px;
+    }
+    .forms-set .form-col.input-holder .form-control {
+        width: 100%;
+    }
+    .forms-set .form-col {
+        padding-right: 0;
+    }
+}
+@media (max-width:768px){
+    .main {
+        margin: 0 10px;
+    }
+    .top-line .navbar-default .navbar-nav>li {
+        text-align: center;
+    }
+    .top-line .navbar-default .navbar-nav {
+        margin: 0;
+        padding: 0;
+    }
+    .top-line .navbar-default .navbar-nav>li:hover {
+        background-color: #ddd;
+    }
+    .forms-set .form-col.input-holder .form-control {
+        width: 100%;
+    }
+    .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (max-width:300px) {
+    .navbar-toggle {
+        padding: 17px 10px;
+    }
+}

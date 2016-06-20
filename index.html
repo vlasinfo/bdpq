@@ -4,53 +4,335 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
+    <title>bdpq.ru</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/fonts.css" rel="stylesheet">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-table.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tables.css">
+    <link href="css/main.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
+<div class="container">
+<!-- Top line -->
+    <div class="row top-line">
+        <div class="col-sm-6 col-xs-12 nav-part">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">bdpq</a>
+                    </div>
 
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Дроп ↓</a></li>
+                            <li><a href="#">Фотосемантика</a></li>
+                            <li><a href="#">Типограф</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="col-sm-6 col-xs-12 btn-part">
+            <a href="#" class="btn red btn-big">Войти →</a>
+        </div>
+    </div>
+<!-- End Top line -->
+<div class="main">
+<!-- Page Title -->
+    <div class="row page-title">
+        <div class="col-md-12 title-part">
+            <h1>2015 освободившихся доменов</h1>
+        </div>
+    </div>
+<!-- Page Title -->
 
-<table data-toggle="table">
-    <thead>
-    <tr>
-        <th data-field="fruit" data-sortable="true">Item</th>
-        <th data-field="date"  data-sortable="true" data-sort-name="_date_data" data-sorter="monthSorter">Date</th>
-        <th data-field="type"  data-sortable="true">Type</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr><td>Pear  </td><td data-month="1">January</td> <td>Fruit</td></tr>
-    <tr><td>Carrot</td><td data-month="3">March</td>   <td>Vegetable</td></tr>
-    <tr><td>Apple </td><td data-month="2">February</td><td>Fruit</td></tr>
-    </tbody>
-</table>
+<!-- Forms set -->
+    <div class="row page-title forms-set">
+        <form>
+        <div class="col-md-3 col-xs-12 form-col input-holder">
+            <div class="title">Имя домена содержит</div>
+            <div class="col-md-12 form-group">
+                <label class="sr-only" for="symbolsExist">Имя домена содержит</label>
+                <input type="text" class="form-control" id="symbolsExist" placeholder="oo,bq,pq">
+            </div>
 
+        </div>
 
+        <div class="col-md-3 col-xs-12 form-col">
+            <div class="title">Количество символов</div>
+            <div class="col-md-4 col-sm-5 col-xs-12 form-group">
+                <label class="sr-only" for="symbolsFrom">От</label>
+                <input type="email" class="form-control" id="symbolsFrom" placeholder="От">
+            </div>
+            <div class="col-md-4 col-sm-2 hidden-xs divider"></div>
+            <div class="col-md-4 col-sm-5 col-xs-12 form-group">
+                <label class="sr-only" for="symbolsTo">До</label>
+                <input type="text" class="form-control" id="symbolsTo" placeholder="До">
+            </div>
+        </div>
 
+        <div class="col-md-3 col-xs-12 form-col">
+            <div class="title">Дата освобождения</div>
+            <div class="col-md-4 col-sm-5 col-xs-12 form-group">
+                <label class="sr-only" for="symbolsFromDate">От</label>
+                <input type="text" class="form-control" id="symbolsFromDate" placeholder="00.00">
+            </div>
+            <div class="col-md-4 col-sm-2 hidden-xs divider"></div>
+            <div class="col-md-4 col-sm-5 col-xs-12 form-group">
+                <label class="sr-only" for="symbolsToDate">До</label>
+                <input type="text" class="form-control" id="symbolsToDate" placeholder="00.00">
+            </div>
+        </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <div class="col-md-3 col-xs-12 form-col">
+            <div class="title">Исключить в домене</div>
+            <div class="checkbox-holder">
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Цифры
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="option2"> Дефис
+                </label>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12 prl form-col-btn">
+            <div class="col-sm-8 col-xs-12 prl">
+                <button type="submit" class="btn orange btn-big">Применить фильтр</button>
+            </div>
+            <div class="col-sm-4 col-xs-12 prl">
+                <button type="reset" class="btn red btn-big">Сбросить</button>
+            </div>
+        </div>
+        <div class="col-md-6 hidden-xs"></div>
+    </form>
+    </div>
+<!-- End Forms set -->
+
+<!-- Registration -->
+    <div class="row">
+        <div class="col-md-12 reg-text">
+            <h2 class="title">Вы находитесь в прошлом</h2>
+            <div class="desc">чтобы увидеть будущее - зарегистрируйтесь</div>
+            <a href="#" class="btn trt">Регистрация →</a>
+        </div>
+    </div>
+<!-- End Registration -->
+
+<!-- Table Sortable -->
+    <div class="row">
+            <table id="big-data-table" class="big-data-table">
+                <thead>
+                <tr>
+                    <th><div class="title">Домен</div></th>
+                    <th><div class="title">Фоно</div></th>
+                    <th><div class="title">3</div></th>
+                    <th><div class="title">Перевод</div></th>
+                    <th><div class="title">1P</div></th>
+                    <th><div class="title">xP</div></th>
+                    <th><div class="title">Веб</div></th>
+                    <th><div class="title">Алекса</div></th>
+                    <th><div class="title">тИЦ</div></th>
+                    <th><div class="title">ЯК</div></th>
+                    <th><div class="title">ПР</div></th>
+                    <th><div class="title">ЛП</div></th>
+                    <th><div class="title">Юр</div></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="opt1"><span>pff.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50k</a></td>
+                    <td><a href="#">29040к</a></td>
+                    <td><a href="#">5k</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63к</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="opt2"><span>morozov.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50k</a></td>
+                    <td><a href="#">29040к</a></td>
+                    <td><a href="#">5k</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63к</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="opt3"><span>advance.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50k</a></td>
+                    <td><a href="#">29040к</a></td>
+                    <td><a href="#">5k</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63к</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="opt4"><span>printbank.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50k</a></td>
+                    <td><a href="#">29040к</a></td>
+                    <td><a href="#">5k</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63к</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="opt5"><span>длинноеназваниедоменаоченьдлинное</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50k</a></td>
+                    <td><a href="#">29040к</a></td>
+                    <td><a href="#">5k</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63к</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>avers.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50k</a></td>
+                    <td><a href="#">29040к</a></td>
+                    <td><a href="#">5k</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63к</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+        <ul class="pagination"></ul>
+</div><!-- .main -->
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-xs-6 prl">
+                <ul class="contacts">
+                    <li>Эл почта: <a href="mailto:box@bdpq.ru">box@bdpq.ru</a></li>
+                    <li><a href="https://www.facebook.com/vlasinfo" target="_blank">FACEBOOK</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-xs-6">
+                <ul class="socials">
+                    <li><a href="#">Твитнуть</a></li>
+                    <li><a href="#">Поделиться</a></li>
+                    <li><a href="#">Плюсануть</a></li>
+                    <li><a href="#">Поделиться</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script src="js/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-table.js"></script>
-</body>
-
+<script src="js/jquery.sortelements.js" type="text/javascript"></script>
+<script src="js/jquery.bdt.min.js" type="text/javascript"></script>
+<script src="js/responsive-paginate.js" type="text/javascript"></script>
 <script>
-    function monthSorter(a, b) {
-        if (a.month < b.month) return -1;
-        if (a.month > b.month) return 1;
-        return 0;
-    }
+    $(document).ready( function () {
+        $('#big-data-table').bdt({
+            showSearchForm: 0,
+            showEntriesPerPageField: 0
+        });
+    });
 </script>
+<script>
+    $(document).ready(function () {
+        $.fn.generateRandomPagination = function(options)
+        {
+            var content = '<li class="left-etc"><a href="#">&laquo;</a></li>';
+            for (var i = 1; i <= options.max_value; i++)
+            {
+                if (i == options.selected_value)
+                    content += '<li class="active"><span>' + i + '</span></li>';
+                else
+                    content += '<li><a href="">' + i + '</a></li>';
+            }
+            content += '<li><a href="#">&raquo;</a></li>';
+            $(this).html(content);
+        }
+
+        var i = 50;
+        $(".pagination").each(function(){
+            $(this).generateRandomPagination({
+                max_value: 100,
+                selected_value: i
+            });
+            i += 49;
+        });
+
+        $(".pagination").rPage();
+    });
+</script>
+</body>
 </html>
