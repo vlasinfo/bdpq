@@ -16,7 +16,8 @@
 
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
+<div class="content">
 <!-- Top line -->
     <div class="row top-line">
         <div class="col-sm-6 col-xs-12 nav-part">
@@ -36,7 +37,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Дроп ↓</a></li>
+                            <li class="active"><a href="#">Дроп <span class="arrow-web">↓</span> </a></li>
                             <li><a href="#">Фотосемантика</a></li>
                             <li><a href="#">Типограф</a></li>
                         </ul>
@@ -45,7 +46,7 @@
             </nav>
         </div>
         <div class="col-sm-6 col-xs-12 btn-part">
-            <a href="#" class="btn red btn-big">Войти →</a>
+            <a href="#" class="btn red trt btn-big">Войти <span class="arrow-web">→</span></a>
         </div>
     </div>
 <!-- End Top line -->
@@ -112,11 +113,11 @@
                 <button type="submit" class="btn orange btn-big">Применить фильтр</button>
             </div>
             <div class="col-sm-4 col-xs-12 prl">
-                <button type="reset" class="btn red btn-big">Сбросить</button>
+                <button type="reset" class="btn red trt btn-big">Сбросить</button>
             </div>
         </div>
         <div class="col-md-6 hidden-xs"></div>
-    </form>
+        </form>
     </div>
 <!-- End Forms set -->
 
@@ -125,13 +126,14 @@
         <div class="col-md-12 reg-text">
             <h2 class="title">Вы находитесь в прошлом</h2>
             <div class="desc">чтобы увидеть будущее - зарегистрируйтесь</div>
-            <a href="#" class="btn trt">Регистрация →</a>
+            <a href="#" class="btn trt">Регистрация <span class="arrow-web">→</span></a>
         </div>
     </div>
 <!-- End Registration -->
 
 <!-- Table Sortable -->
     <div class="row">
+        <div class="col-md-12">
             <table id="big-data-table" class="big-data-table">
                 <thead>
                 <tr>
@@ -151,7 +153,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
+                <tr class="show-hide">
                     <td>
                         <label class="checkbox-inline">
                             <input type="checkbox" value="opt1"><span>pff.ru</span>
@@ -162,15 +164,15 @@
                     <td></td>
                     <td><a href="#">19</a></td>
                     <td><a href="#">19</a></td>
-                    <td><a href="#">50k</a></td>
-                    <td><a href="#">29040к</a></td>
-                    <td><a href="#">5k</a></td>
+                    <td id="reptokk"><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
                     <td><a href="#">ЯК</a></td>
                     <td><a href="#">1</a></td>
-                    <td><a href="#">63к</a></td>
+                    <td><a href="#">63 000</a></td>
                     <td><a href="#">Юр</a></td>
                 </tr>
-                <tr>
+                <tr class="show-hide">
                     <td>
                         <label class="checkbox-inline">
                             <input type="checkbox" value="opt2"><span>morozov.ru</span>
@@ -181,15 +183,15 @@
                     <td><a href="#">Морозов</a></td>
                     <td><a href="#">19</a></td>
                     <td><a href="#">19</a></td>
-                    <td><a href="#">50k</a></td>
-                    <td><a href="#">29040к</a></td>
-                    <td><a href="#">5k</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">120 122 345</a></td>
+                    <td><a href="#">5 000</a></td>
                     <td><a href="#">ЯК</a></td>
                     <td><a href="#">1</a></td>
-                    <td><a href="#">63к</a></td>
+                    <td><a href="#">63 000</a></td>
                     <td><a href="#">Юр</a></td>
                 </tr>
-                <tr>
+                <tr class="show-hide">
                     <td>
                         <label class="checkbox-inline">
                             <input type="checkbox" value="opt3"><span>advance.ru</span>
@@ -200,15 +202,15 @@
                     <td><a href="#">Морозов</a></td>
                     <td><a href="#">19</a></td>
                     <td><a href="#">19</a></td>
-                    <td><a href="#">50k</a></td>
-                    <td><a href="#">29040к</a></td>
-                    <td><a href="#">5k</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">120 122 345</a></td>
+                    <td><a href="#">5 000</a></td>
                     <td><a href="#">ЯК</a></td>
                     <td><a href="#">1</a></td>
-                    <td><a href="#">63к</a></td>
+                    <td><a href="#">63 000</a></td>
                     <td><a href="#">Юр</a></td>
                 </tr>
-                <tr>
+                <tr class="show-hide">
                     <td>
                         <label class="checkbox-inline">
                             <input type="checkbox" value="opt4"><span>printbank.ru</span>
@@ -219,15 +221,15 @@
                     <td><a href="#">Морозов</a></td>
                     <td><a href="#">19</a></td>
                     <td><a href="#">19</a></td>
-                    <td><a href="#">50k</a></td>
-                    <td><a href="#">29040к</a></td>
-                    <td><a href="#">5k</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">120 122 345</a></td>
+                    <td><a href="#">5 000</a></td>
                     <td><a href="#">ЯК</a></td>
                     <td><a href="#">1</a></td>
-                    <td><a href="#">63к</a></td>
+                    <td><a href="#">63 000</a></td>
                     <td><a href="#">Юр</a></td>
                 </tr>
-                <tr>
+                <tr class="show-hide">
                     <td>
                         <label class="checkbox-inline">
                             <input type="checkbox" value="opt5"><span>длинноеназваниедоменаоченьдлинное</span>
@@ -238,15 +240,15 @@
                     <td><a href="#">Морозов</a></td>
                     <td><a href="#">19</a></td>
                     <td><a href="#">19</a></td>
-                    <td><a href="#">50k</a></td>
-                    <td><a href="#">29040к</a></td>
-                    <td><a href="#">5k</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">120 122 345</a></td>
+                    <td><a href="#">5 000</a></td>
                     <td><a href="#">ЯК</a></td>
                     <td><a href="#">1</a></td>
-                    <td><a href="#">63к</a></td>
+                    <td><a href="#">63 000</a></td>
                     <td><a href="#">Юр</a></td>
                 </tr>
-                <tr>
+                <tr class="show-hide">
                     <td>
                         <label class="checkbox-inline">
                             <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>avers.ru</span>
@@ -257,19 +259,874 @@
                     <td><a href="#">Морозов</a></td>
                     <td><a href="#">19</a></td>
                     <td><a href="#">19</a></td>
-                    <td><a href="#">50k</a></td>
-                    <td><a href="#">29040к</a></td>
-                    <td><a href="#">5k</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">342 233 </a></td>
+                    <td><a href="#">5 000</a></td>
                     <td><a href="#">ЯК</a></td>
                     <td><a href="#">1</a></td>
-                    <td><a href="#">63к</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>panaservice.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">342 233 </a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>vp.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">42 454</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>gosstroy.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">45 678</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>td-mir.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">1024</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>aerocom.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">1024</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>elsov.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">1024</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>rosnii.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>arlanmotors.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>fsakhalin.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>sight.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>psoriaz.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>cryocor.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>producer.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>travelmoney.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>ibo.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>mk-sp.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>otts.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>bfc.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>elektronica.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>assistant.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>admiral-group.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>center01.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>kit-m.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>nordosetia.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>bief.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>erisan.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>tso.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>sibin.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>aquatexjla.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>prodcompany.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>nesterova.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>woodproducts.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>dmreklama.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>free-style.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>boulevard.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>clinics.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>grand-azs.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>lancet.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>mkk.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>moniki.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>kalashnikoff.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>optifood.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>shenweida.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
+                    <td><a href="#">Юр</a></td>
+                </tr>
+                <tr class="show-hide">
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="opt2"><span>dm-reklama.ru</span>
+                        </label>
+                    </td>
+                    <td><a href="#">1 - 21</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">Морозов</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">50 000</a></td>
+                    <td><a href="#">212 000 000</a></td>
+                    <td><a href="#">5 000</a></td>
+                    <td><a href="#">ЯК</a></td>
+                    <td><a href="#">1</a></td>
+                    <td><a href="#">63 000</a></td>
                     <td><a href="#">Юр</a></td>
                 </tr>
                 </tbody>
             </table>
-    </div>
-        <ul class="pagination"></ul>
+        </div>
+            <div class="col-md-12 prl">
+            <ul class="pagination">
+                <div class="col-sm-3 col-xs-6 pr">
+                    <li class="disabled"><a href="#"><span><span class="arrow-web">←</span> Назад</span></a></li>
+                </div>
+                <div class="col-sm-6 hidden-xs prl pages">
+                    <li class="current"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li class="disabled"><a href="">...</a></li>
+                    <li><a href="#">19</a></li>
+                </div>
+                <div class="col-sm-3 col-xs-6 pl">
+                    <li><a href="#"><span>Вперед <span class="arrow-web">→</span></span></a></li>
+                </div>
+            </ul>
+            </div>
+        </div>
 </div><!-- .main -->
+</div>
 </div>
 
 <footer>
@@ -295,44 +1152,16 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.sortelements.js" type="text/javascript"></script>
-<script src="js/jquery.bdt.min.js" type="text/javascript"></script>
-<script src="js/responsive-paginate.js" type="text/javascript"></script>
 <script>
-    $(document).ready( function () {
-        $('#big-data-table').bdt({
-            showSearchForm: 0,
-            showEntriesPerPageField: 0
-        });
+    $(function () {
+        $('.show-hide').click(function (event) {
+            $(this).toggleClass('show-td');
+        })
     });
 </script>
 <script>
-    $(document).ready(function () {
-        $.fn.generateRandomPagination = function(options)
-        {
-            var content = '<li class="left-etc"><a href="#">&laquo;</a></li>';
-            for (var i = 1; i <= options.max_value; i++)
-            {
-                if (i == options.selected_value)
-                    content += '<li class="active"><span>' + i + '</span></li>';
-                else
-                    content += '<li><a href="">' + i + '</a></li>';
-            }
-            content += '<li><a href="#">&raquo;</a></li>';
-            $(this).html(content);
-        }
-
-        var i = 50;
-        $(".pagination").each(function(){
-            $(this).generateRandomPagination({
-                max_value: 100,
-                selected_value: i
-            });
-            i += 49;
-        });
-
-        $(".pagination").rPage();
-    });
+    var myString = document.getElementById('reptokk').value;
+    var newString = myString.substr(2);
 </script>
 </body>
 </html>

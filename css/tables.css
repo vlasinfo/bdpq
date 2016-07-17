@@ -1,8 +1,9 @@
-table.big-data-table {
+﻿table.big-data-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 16px;
     line-height: 22px;
+    font-family: Circe-Regular;
 }
 
 table.big-data-table td .checkbox-inline input[type=checkbox] {
@@ -11,11 +12,30 @@ table.big-data-table td .checkbox-inline input[type=checkbox] {
 
 table.big-data-table a,
 table.big-data-table td .checkbox-inline span {
-    padding-left: 5px;
     max-width: 120px;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
     display: block;
+	position: relative;
+	z-index: 99;
+}
+
+.checkbox-inline span {
+    padding-left: 25px;
+}
+
+table.big-data-table input[type=checkbox]:checked:after {
+    left: 30px;
+}
+
+table.big-data-table input[type=checkbox]:before {
+    left: 21px;
+    position: absolute;
+}
+
+table.big-data-table .checkbox-inline {
+    padding-left: 0;
 }
 
 table.big-data-table td {
@@ -76,49 +96,17 @@ table.big-data-table thead tr:hover {
     background: transparent;
 }
 
-/* Pagination */
-.pagination>li:first-child>a,
-.pagination>li:first-child>span,
-.pagination>li:last-child>a,
-.pagination>li:last-child>span {
-    border-radius: 0;
-}
-.pagination>li>a {
-    padding: 6px 30px;
-    font-size: 16px;
-}
-.pagination>li>a:hover {
-    background: #ff0000;
-    color: #ffffff;
-    cursor: pointer;
-}
-.pagination>.active>a {
-    background: transparent;
-    color: #000000;
-    border-color: #c0c0c0;
-}
-.pagination>.active>a:hover {
-    background: transparent;
-    color: #000000;
-    border-color: #c0c0c0;
-}
-/* End Pagination */
-
 @media
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
     table.big-data-table {
         border: 0 !important;
-    }
-
-    table.big-data-table tr {
-
+        margin: 0;
     }
 
     table.big-data-table tr:hover {
         background: transparent;
-        border: 1px solid #000000;
     }
 
     table.big-data-table tr:nth-of-type(odd) {
@@ -139,23 +127,81 @@ only screen and (max-width: 760px),
         min-height: 35px;
     }
 
+    table.big-data-table tr {
+        border: 0;
+    }
+
     table.big-data-table thead tr {
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
+    table.big-data-table tr,
+    table.big-data-table .show-td {
+        position: relative;
+    }
+    table.big-data-table .show-td {
+        border: 1px solid #000000;
+    }
+    table.big-data-table tr.show-td:before,
+    table.big-data-table tr:before {
+        position: absolute;
+        font-family: Arial;
+        font-size: 14px;
+        top: 5px;
+        right: 5px;
+    }
 
+    table.big-data-table tr:before {
+        content: "\2192";
+    }
+
+    table.big-data-table tr.show-td:before {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+
+    table.big-data-table tr:hover {
+        cursor: pointer;
+    }
+    table.big-data-table .checkbox-inline:hover {
+        color: #ff0000;
+    }
     table.big-data-table td {
         border: none;
         border-bottom: 1px solid #eee;
         position: relative;
         padding-left: 50%;
+        padding-right: 20px;
     }
 
+    table.big-data-table td:first-child {
+        display: block;
+    }
+
+    table.big-data-table td {
+        display: none;
+    }
+
+    table.big-data-table .show-td td {
+        display: block;
+    }
+
+    table.big-data-table .show-td td .checkbox-inline span {
+        font-weight: bold;
+        color: #555;
+    }
+    
+    table.big-data-table .show-td td .checkbox-inline span:hover {
+        color: #ff0000;
+    }
+    
     table.big-data-table td:before {
         position: absolute;
         top: 6px;
-        left: 6px;
+        left: 13px;
         width: 45%;
         padding-right: 10px;
         white-space: nowrap;
@@ -165,8 +211,8 @@ only screen and (max-width: 760px),
     table.big-data-table td:hover {
         background: rgba(255, 191, 0, 0.2);
     }
-
-    table.big-data-table td:nth-of-type(1):before { content: "Домен"; }
+    table.big-data-table td:nth-of-type(1) {padding-left: 10px;}
+    table.big-data-table td:nth-of-type(1):before { content: ""; }
     table.big-data-table td:nth-of-type(2):before { content: "Фоно"; }
     table.big-data-table td:nth-of-type(3):before { content: "3"; }
     table.big-data-table td:nth-of-type(4):before { content: "Перевод"; }
